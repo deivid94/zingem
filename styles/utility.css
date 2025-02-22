@@ -1,3 +1,7 @@
+.container {
+
+    width: 100%;
+}
 .btn-primary-lg{
     background-color: var(--text-color-primary);
     width: 120px;

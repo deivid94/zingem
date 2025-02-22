@@ -1,8 +1,13 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 
 }
 
@@ -18,51 +23,58 @@
     --stroke-color:#272722a;
     --text-color-secondary:#a1a1aa;
     --text-color-primary: #fafaf5;
+    --brand-color-primarry: #f7b733;
+    --brand-color-secondary: #fc4a1a;
+
+      /*FONT-STYLE*/
+      --ff-sans :'Inter', 'system-ui', sans-serif ;
 
     /*FONT MOBILE*/
-
-    --font-mob-lg: 2.5rem;
-    --font-mob-md: 1.5rem;
-    --font-mob-sm: 1.25rem;
-
-
-    /*FONT-DESKTOP*/
-
-    --font-lg:4rem;
-    --font-md:3rem;
-    --font-sm:2rem;;
+    --fs-2xl: 2.5rem;
+    --fs-xl:1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-base: 1rem;
+    --fs--sm: 0.875rem;
 
     /*FONT-WEIGHT*/
+    --fw-base: 400;
+    --fw-md: 500;
+    --fw-bold: 800;
 
-    
-
-    --text: 1rem;
-    --span:0.875rem;
-
-    /*FONT-STYLE*/
-    --font-family :'Inter', 'System-ui', sans-serif ;
 
 }
 
-body {
-    background-color: var(--background-color);
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-base);
+    line-height: 1.6;
     color: var(--text-color-primary);
-    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--background-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2;
+    color: var(--text-color-primary);
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.04rem;
 }
 
 h1 {
-    font-weight: 700;
-    line-height: 1.2px;
+font-size: var(--fs-2xl);
+    
 }
 
 h2{
-    font-size: var(--font-mob-md);
-    font-weight: 700;
-    line-height: ;
+    font-size: var(--fs-xl);
+    
+}
+
+h3 {
+    font-size: var(--fs-lg);
 }
 
 
