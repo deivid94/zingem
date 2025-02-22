@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+:root{
+    /*PRODUTOT*/
+        
+
+    /*BASE*/
+
+    --background-color: #09090B;
+    --surface-color: #18181b;
+    --stroke-color:#272722a;
+    --text-color-secondary:#a1a1aa;
+    --text-color-primary: #fafaf5;
+
+    /*FONT MOBILE*/
+
+    --font-mob-lg: 2.5rem;
+    --font-mob-md: 1.5rem;
+    --font-mob-sm: 1.25rem;
+
+
+    /*FONT-DESKTOP*/
+
+    --font-lg:4rem;
+    --font-md:3rem;
+    --font-sm:2rem;;
+
+    /*FONT-WEIGHT*/
+
+    
+
+    --text: 1rem;
+    --span:0.875rem;
+
+    /*FONT-STYLE*/
+    --font-family :'Inter', 'System-ui', sans-serif ;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    font-family: var(--font-family);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.2px;
+}
+
+h2{
+    font-size: var(--font-mob-md);
+    font-weight: 700;
+    line-height: ;
+}
+
+
+
+p {
+    font-size: var(--text);
+    line-height: 1.6;
+}
+
+span {
+    font-size: var(--span);
+    line-height: 1.0;
+}
+
+ul[type=list]{
+    list-style: none;
+}
